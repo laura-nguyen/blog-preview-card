@@ -1,0 +1,52 @@
+@use "variables" as *;
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./../../fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./../..//fonts/Figtree-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./../..//fonts/static/Figtree-Regular.ttf") format("truetype");
+  font-weight: $font-weight-500;
+  font-style: normal;
+}
+
+// ... continue importing the remaining static fonts
+
+%text-preset-1 {
+  font-size: 1.5rem;
+  line-height: 150%;
+  font-weight: $font-weight-800;
+  color: $gray-950;
+}
+
+%text-preset-2 {
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: $font-weight-500;
+  color: $gray-950;
+}
+
+%text-preset-3 {
+  font-size: 0.875rem;
+  line-height: 150%;
+  font-weight: $font-weight-500;
+  color: $gray-950;
+}
+
+%text-preset-3-bold {
+  @extend %text-preset-3;
+
+  font-weight: $font-weight-800;
+}
