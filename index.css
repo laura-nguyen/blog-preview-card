@@ -61,7 +61,7 @@ body {
 
 .card {
   background-color: hsl(0, 0%, 100%);
-  width: 20.4375rem;
+  width: clamp(20.4375rem, 5vw + 20rem, 24rem);
   padding: 1.5rem;
   border: hsl(0, 0%, 7%) 0.0625rem solid;
   border-radius: 1.25rem;
@@ -69,11 +69,6 @@ body {
   flex-direction: column;
   gap: 1.5rem;
   box-shadow: 0.5rem 0.5rem rgb(0, 0, 0);
-}
-@media (min-width: 1440px) {
-  .card {
-    min-width: 24rem;
-  }
 }
 .card__thumbnail {
   width: auto;

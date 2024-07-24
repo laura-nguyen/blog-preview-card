@@ -16,7 +16,7 @@
 
 .card {
   background-color: $white;
-  width: 20.4375rem;
+  width: clamp(20.4375rem, 5vw + 20rem, 24rem);
   padding: 1.5rem;
   border: $gray-950 0.0625rem solid;
   border-radius: 1.25rem;
@@ -24,10 +24,6 @@
   flex-direction: column;
   gap: 1.5rem;
   box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 1);
-
-  @include desktop {
-    min-width: 24rem;
-  }
 
   &__thumbnail {
     width: auto;
