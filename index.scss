@@ -7,9 +7,82 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   height: 90vh;
   @include desktop {
     margin: 0 auto;
+  }
+}
+
+.card {
+  background-color: $white;
+  width: 20.4375rem;
+  padding: 1.5rem;
+  border: $gray-950 0.0625rem solid;
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 1);
+
+  @include desktop {
+    min-width: 24rem;
+  }
+
+  &__thumbnail {
+    width: auto;
+    height: 12.5rem;
+    border-radius: 0.625rem;
+    object-fit: cover;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-150;
+  }
+
+  &__tag {
+    display: flex;
+    p {
+      background-color: $yellow;
+      padding: $spacing-50 $spacing-150;
+      border-radius: 0.25rem;
+      @extend %text-preset-3-bold;
+    }
+  }
+
+  &__date {
+    @extend %text-preset-3;
+  }
+
+  &__title {
+    @extend %text-preset-1;
+
+    @include mobile {
+      font-size: 1.25rem !important;
+    }
+  }
+
+  &__description {
+    @extend %text-preset-2;
+    color: $gray-500 !important;
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    gap: $spacing-100;
+
+    &-image {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+    }
+
+    &-author {
+      @extend %text-preset-3-bold;
+    }
   }
 }
 

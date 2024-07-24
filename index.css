@@ -1,22 +1,42 @@
 @font-face {
   font-family: "Figtree";
-  src: url("./../../fonts/Figtree-VariableFont_wght.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Figtree";
-  src: url("./../..//fonts/Figtree-Italic-VariableFont_wght.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Figtree";
-  src: url("./../..//fonts/static/Figtree-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+.card__title {
+  font-size: 1.5rem;
+  line-height: 150%;
+  font-weight: 800;
+  color: hsl(0, 0%, 7%);
+}
+
+.card__description {
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 500;
+  color: hsl(0, 0%, 7%);
+}
+
+.card__date, .card__tag p, .card__profile-author {
+  font-size: 0.875rem;
+  line-height: 150%;
+  font-weight: 500;
+  color: hsl(0, 0%, 7%);
+}
+
+.card__tag p, .card__profile-author {
+  font-weight: 800;
+}
+
 * {
+  font-family: "Figtree", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -39,6 +59,60 @@ body {
   }
 }
 
+.card {
+  background-color: hsl(0, 0%, 100%);
+  width: 20.4375rem;
+  padding: 1.5rem;
+  border: hsl(0, 0%, 7%) 0.0625rem solid;
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0.5rem 0.5rem rgb(0, 0, 0);
+}
+@media (min-width: 1440px) {
+  .card {
+    min-width: 24rem;
+  }
+}
+.card__thumbnail {
+  width: auto;
+  height: 12.5rem;
+  border-radius: 0.625rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.card__tag {
+  display: flex;
+}
+.card__tag p {
+  background-color: hsl(47, 88%, 63%);
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+}
+@media (min-width: 375px) {
+  .card__title {
+    font-size: 1.25rem !important;
+  }
+}
+.card__description {
+  color: hsl(0, 0%, 42%) !important;
+}
+.card__profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.card__profile-image {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
 .attribution {
   font-size: 0.6875rem;
   text-align: center;

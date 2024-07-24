@@ -3,7 +3,7 @@
 @use "mixins" as *;
 
 * {
-  // font-family: "Outfit", sans-serif;
+  font-family: "Figtree", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,13 +12,4 @@
 body {
   background-color: $yellow;
   height: 100vh;
-}
-
-h1 {
-  // @extend %outfit-bold;
-  // margin-bottom: 1rem;
-}
-
-p {
-  // @extend %outfit-regular;
 }
