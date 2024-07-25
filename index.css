@@ -70,6 +70,11 @@ body {
   gap: 1.5rem;
   box-shadow: 0.5rem 0.5rem rgb(0, 0, 0);
 }
+@media (min-width: 375px) {
+  .card {
+    width: clamp(20.4375rem, 5vw + 20rem, 24rem);
+  }
+}
 .card__thumbnail {
   width: auto;
   height: 12.5rem;

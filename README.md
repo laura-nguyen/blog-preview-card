@@ -14,13 +14,10 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
-this is for the front end mentor project and the goal was to build out this blog preview card and get it looking as close to the design as possible.
+This project is part of the Frontend Mentor challenge series. The goal was to create a blog preview card that closely matches the provided design.
 
 ### The challenge
 
@@ -50,29 +47,21 @@ Users should be able to:
 
 ### What I learned
 
-I learned that the solid box shadow was something that would have been possible with css. The drop shadow has been a trending design so it was great to learn how to do that.
+In this project, I learned how to effectively use the clamp() function in CSS to create responsive designs. The clamp() function provides a way to define responsive values with a minimum, preferred, and maximum value, ensuring smoother transitions between different screen sizes.
+
+Additionally, I improved my understanding of creating and styling box shadows. The drop shadow effect has become a popular design trend, and this project provided an excellent opportunity to practice implementing it using CSS.
 
 ### Continued development
 
-I want to be about to know how to
+I aim to continue exploring various styling and responsive design techniques. I am particularly excited about learning new methods that enhance user experience and make web interfaces more intuitive and engaging.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [CSS clamp() method](https://www.geeksforgeeks.org/css-clamp-method/) - Guide on clamp
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Laura Nguyen](https://www.your-site.com)
+- Frontend Mentor - [@laura-nguyen](https://www.frontendmentor.io/profile/laura-nguyen)
+- Github - [@laura-nguyen](https://www.github.com/laura-nguyen)
+- Twitter - [@lauriananguyen](https://www.twitter.com/lauriananguyen)

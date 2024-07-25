@@ -15,6 +15,10 @@
 }
 
 .card {
+  @include mobile {
+    width: clamp(20.4375rem, 5vw + 20rem, 24rem);
+  }
+
   background-color: $white;
   width: clamp(20.4375rem, 5vw + 20rem, 24rem);
   padding: 1.5rem;
