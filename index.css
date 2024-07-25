@@ -3,12 +3,14 @@
   src: url("./../../assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Figtree";
-  src: url("./../../assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+  src: url("./../../assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype"), url("./../../assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
+  font-display: swap;
 }
 .card__title {
   font-size: 1.5rem;
