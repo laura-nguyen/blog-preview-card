@@ -6,6 +6,7 @@
   font-size: 1.5rem;
   line-height: 150%;
   font-weight: $font-weight-800;
+  font-style: normal;
   color: $gray-950;
 }
 
@@ -13,6 +14,7 @@
   font-size: 1rem;
   line-height: 150%;
   font-weight: $font-weight-500;
+  font-style: normal;
   color: $gray-950;
 }
 
@@ -20,11 +22,11 @@
   font-size: 0.875rem;
   line-height: 150%;
   font-weight: $font-weight-500;
+  font-style: normal;
   color: $gray-950;
 }
 
 %text-preset-3-bold {
   @extend %text-preset-3;
-
   font-weight: $font-weight-800;
 }
